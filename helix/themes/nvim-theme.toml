@@ -1,0 +1,205 @@
+# ghostty_nvim_dark.toml
+# Helix theme derived directly from the Ghostty nvim dark palette.
+# Install: cp ghostty_nvim_dark.toml ~/.config/helix/themes/
+# Activate: set `theme = "ghostty_nvim_dark"` in ~/.config/helix/config.toml
+
+# ── Syntax highlighting ───────────────────────────────────────────────────────
+
+"attribute"               = { fg = "blue" }
+
+"comment"                 = { fg = "bright_black_hi", modifiers = ["italic"] }
+"comment.line"            = { fg = "bright_black_hi", modifiers = ["italic"] }
+"comment.block"           = { fg = "bright_black_hi", modifiers = ["italic"] }
+
+"constant"                = { fg = "yellow" }
+"constant.builtin"        = { fg = "magenta", modifiers = ["bold"] }
+"constant.builtin.boolean"= { fg = "magenta" }
+"constant.character"      = { fg = "green" }
+"constant.numeric"        = { fg = "blue" }
+
+"constructor"             = { fg = "cyan" }
+
+"function"                = { fg = "green" }
+"function.builtin"        = { fg = "magenta" }
+"function.method"         = { fg = "cyan" }
+"function.macro"          = { fg = "magenta" }
+"function.special"        = { fg = "magenta" }
+
+"keyword"                 = { fg = "magenta" }
+"keyword.control"         = { fg = "magenta" }
+"keyword.control.conditional" = { fg = "magenta" }
+"keyword.control.repeat"  = { fg = "magenta" }
+"keyword.control.import"  = { fg = "magenta" }
+"keyword.control.return"  = { fg = "magenta" }
+"keyword.control.exception" = { fg = "red" }
+"keyword.function"        = { fg = "blue" }
+"keyword.operator"        = { fg = "magenta" }
+"keyword.storage"         = { fg = "blue" }
+"keyword.storage.type"    = { fg = "magenta" }
+"keyword.storage.modifier"= { fg = "blue" }
+
+"label"                   = { fg = "blue" }
+
+"namespace"               = { fg = "fg" }
+
+"operator"                = { fg = "magenta" }
+
+"punctuation"             = { fg = "fg_dim" }
+"punctuation.delimiter"   = { fg = "fg_dim" }
+"punctuation.bracket"     = { fg = "fg" }
+"punctuation.special"     = { fg = "blue" }
+
+"special"                 = { fg = "yellow" }
+
+"string"                  = { fg = "green" }
+"string.regexp"           = { fg = "cyan" }
+"string.special"          = { fg = "blue" }
+"string.special.path"     = { fg = "blue", modifiers = ["underlined"] }
+"string.special.url"      = { fg = "cyan", modifiers = ["underlined"] }
+
+"tag"                     = { fg = "red" }
+"tag.builtin"             = { fg = "red" }
+
+"type"                    = { fg = "yellow" }
+"type.builtin"            = { fg = "blue" }
+"type.parameter"          = { fg = "yellow" }
+"type.enum.variant"       = { fg = "yellow" }
+
+"variable"                = { fg = "fg" }
+"variable.builtin"        = { fg = "red" }
+"variable.parameter"      = { fg = "yellow" }
+"variable.other.member"   = { fg = "blue" }
+
+# ── Markup ────────────────────────────────────────────────────────────────────
+
+"markup.heading"          = { fg = "blue", modifiers = ["bold"] }
+"markup.heading.1"        = { fg = "red",     modifiers = ["bold"] }
+"markup.heading.2"        = { fg = "yellow",  modifiers = ["bold"] }
+"markup.heading.3"        = { fg = "green",   modifiers = ["bold"] }
+"markup.bold"             = { fg = "fg",      modifiers = ["bold"] }
+"markup.italic"           = { fg = "fg",      modifiers = ["italic"] }
+"markup.strikethrough"    = { fg = "fg_dim",  modifiers = ["crossed_out"] }
+"markup.link"             = { fg = "cyan" }
+"markup.link.url"         = { fg = "cyan",    modifiers = ["underlined"] }
+"markup.link.text"        = { fg = "blue" }
+"markup.quote"            = { fg = "fg_dim",  modifiers = ["italic"] }
+"markup.raw"              = { fg = "green" }
+"markup.raw.inline"       = { fg = "green" }
+"markup.raw.block"        = { fg = "green" }
+"markup.list"             = { fg = "fg" }
+
+# ── Diff ──────────────────────────────────────────────────────────────────────
+
+"diff.plus"               = { fg = "green" }
+"diff.minus"              = { fg = "red" }
+"diff.delta"              = { fg = "yellow" }
+"diff.plus.gutter"        = { fg = "green" }
+"diff.minus.gutter"       = { fg = "red" }
+"diff.delta.gutter"       = { fg = "yellow" }
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+
+"ui.background"           = { bg = "bg" }
+"ui.background.separator" = { fg = "gutter" }
+
+"ui.cursor"               = { fg = "bg",    bg = "cursor" }
+"ui.cursor.normal"        = { fg = "bg",    bg = "cursor" }
+"ui.cursor.insert"        = { fg = "bg",    bg = "fg_dim" }
+"ui.cursor.select"        = { fg = "bg",    bg = "yellow" }
+"ui.cursor.match"         = { fg = "bg",    bg = "cyan" }
+"ui.cursor.primary"       = { fg = "bg",    bg = "cursor" }
+"ui.cursor.primary.normal"= { fg = "bg",    bg = "cursor" }
+"ui.cursor.primary.insert"= { fg = "bg",    bg = "fg_dim" }
+"ui.cursor.primary.select"= { fg = "bg",    bg = "yellow" }
+
+"ui.cursorline.primary"   = { bg = "bg_hi" }
+"ui.cursorline.secondary" = { bg = "bg_hi" }
+
+"ui.debug.breakpoint"     = { fg = "red" }
+"ui.debug.active"         = { fg = "yellow" }
+
+"ui.gutter"               = { bg = "bg" }
+"ui.gutter.selected"      = { bg = "bg_hi" }
+
+"ui.highlight"            = { bg = "selection_bg" }
+"ui.highlight.frameline"  = { bg = "bg_hi" }
+
+"ui.linenr"               = { fg = "gutter" }
+"ui.linenr.selected"      = { fg = "fg_dim", modifiers = ["bold"] }
+
+"ui.menu"                 = { fg = "fg",    bg = "bg_popup" }
+"ui.menu.selected"        = { fg = "bg",    bg = "blue" }
+"ui.menu.scroll"          = { fg = "gutter" }
+
+"ui.picker.header"        = { fg = "cyan",  modifiers = ["bold"] }
+
+"ui.popup"                = { fg = "fg",    bg = "bg_popup" }
+"ui.popup.info"           = { fg = "fg",    bg = "bg_popup" }
+
+"ui.selection"            = { bg = "selection_bg" }
+"ui.selection.primary"    = { bg = "selection_bg" }
+
+"ui.statusline"           = { fg = "fg_dim", bg = "bg_statusline" }
+"ui.statusline.normal"    = { fg = "bg",    bg = "blue",    modifiers = ["bold"] }
+"ui.statusline.insert"    = { fg = "bg",    bg = "green",   modifiers = ["bold"] }
+"ui.statusline.select"    = { fg = "bg",    bg = "yellow",  modifiers = ["bold"] }
+"ui.statusline.inactive"  = { fg = "gutter", bg = "bg_statusline" }
+"ui.statusline.separator" = { fg = "gutter" }
+
+"ui.text"                 = { fg = "fg" }
+"ui.text.focus"           = { fg = "fg",    modifiers = ["bold"] }
+"ui.text.inactive"        = { fg = "fg_dim" }
+"ui.text.info"            = { fg = "blue" }
+"ui.text.directory"       = { fg = "blue",  modifiers = ["bold"] }
+
+"ui.virtual.indent-guide" = { fg = "gutter" }
+"ui.virtual.inlay-hint"   = { fg = "bright_black_hi", modifiers = ["italic"] }
+"ui.virtual.ruler"        = { bg = "bg_hi" }
+"ui.virtual.whitespace"   = { fg = "gutter" }
+"ui.virtual.jump-label"   = { fg = "yellow", modifiers = ["bold"] }
+
+"ui.window"               = { fg = "gutter" }
+
+# ── Diagnostics ───────────────────────────────────────────────────────────────
+
+"diagnostic.error"        = { underline = { color = "red",    style = "curl" } }
+"diagnostic.warning"      = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info"         = { underline = { color = "blue",   style = "curl" } }
+"diagnostic.hint"         = { underline = { color = "cyan",   style = "dotted" } }
+"diagnostic.unnecessary"  = { modifiers = ["dim"] }
+"diagnostic.deprecated"   = { modifiers = ["crossed_out"] }
+
+"error"                   = { fg = "red" }
+"warning"                 = { fg = "yellow" }
+"info"                    = { fg = "blue" }
+"hint"                    = { fg = "cyan" }
+
+# ── Palette ───────────────────────────────────────────────────────────────────
+# Derived 1:1 from the Ghostty nvim dark palette.
+# terminal 0-15 → named roles → theme scopes above.
+
+[palette]
+
+# Terminal colors (ghostty palette = N=hex)
+black          = "#07080d"   # 0
+red            = "#ffc0b9"   # 1
+green          = "#b3f6c0"   # 2
+yellow         = "#fce094"   # 3
+blue           = "#a6dbff"   # 4
+magenta        = "#ffcaff"   # 5
+cyan           = "#8cf8f7"   # 6
+white          = "#eef1f8"   # 7
+bright_black   = "#4f5258"   # 8  (also used as gutter/selection)
+# 9-15 are identical to 1-7 in this palette (no separate bright variants)
+
+# Semantic roles
+bg             = "#14161b"   # background
+bg_hi          = "#1c1e24"   # cursorline / slightly lighter surface
+bg_statusline  = "#1c1e24"   # statusline background
+bg_popup       = "#1e2028"   # autocomplete / hover popup background
+fg             = "#e0e2ea"   # foreground
+fg_dim         = "#9b9ea4"   # muted text, cursor color
+gutter         = "#4f5258"   # line numbers, indent guides (= palette 8)
+cursor         = "#9b9ea4"   # cursor color
+selection_bg   = "#4f5258"   # visual selection background
+bright_black_hi= "#6b6f78"   # comments (slightly lighter than gutter)
