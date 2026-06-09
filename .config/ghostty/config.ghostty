@@ -2,10 +2,15 @@ font-family = Monaspace Neon NF
 font-size = 20
 
 theme = Nvim Dark
-background-opacity = 0.95
+background-opacity = 0.9
 background-blur = true
+
+window-padding-x = 20
+window-padding-y = 0, 33
+window-padding-balance = true
+
 
 cursor-style = bar
 maximize = true
 
-macos-icon = xray
+macos-icon = custom

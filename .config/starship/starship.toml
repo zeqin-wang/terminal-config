@@ -1,0 +1,54 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$cpp\
+$python\
+$typst\
+$fill\
+$cmd_duration\
+$time\
+$line_break\
+$character
+"""
+
+[directory]
+truncation_symbol = "…/"
+style = "bold blue"
+
+[git_branch]
+format = "on [$symbol$branch]($style) "
+style = "bold yellow"
+
+[git_status]
+deleted = "×"
+style = "bold red"
+
+[cpp]
+format = "via [$symbol $version]($style) "
+disabled = false
+symbol = "🦀"
+style = "bold red"
+
+[python]
+format = "via [$symbol $version]($style) "
+symbol = "🐍"
+style = "bold green"
+
+[typst]
+format = "via [$symbol $version]($style) "
+symbol = "🐬"
+style = "bold blue"
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+format = "[$duration]($style) at "
+style = "bold purple"
+
+[time]
+format = "[$time]($style)"
+use_12hr = true
+disabled = false
+style = "bold purple"
